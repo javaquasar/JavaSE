@@ -3,7 +3,6 @@ package com.javaquasar.java.core.chapter_01_Start;
 /**
  * Created by Java Quasar on 16.05.17.
  */
-
 public class HelloWorld {
 
     /**

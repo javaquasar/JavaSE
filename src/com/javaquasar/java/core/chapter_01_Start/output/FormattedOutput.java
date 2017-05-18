@@ -1,4 +1,4 @@
-package com.javaquasar.java.core.chapter_01_Start;
+package com.javaquasar.java.core.chapter_01_Start.output;
 
 /**
  * Created by Java Quasar on 16.05.17.

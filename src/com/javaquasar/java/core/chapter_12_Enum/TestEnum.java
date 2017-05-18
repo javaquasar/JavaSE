@@ -26,6 +26,8 @@ public class TestEnum {
                 break;
         }
 
+
+
         /*
         Объявляя enum мы неявно создаем класс производный от java.lang.Enum.
         Условно конструкция enum SimpleEnum { ... } эквивалентна class SimpleEnum extends java.lang.Enum { ... }.

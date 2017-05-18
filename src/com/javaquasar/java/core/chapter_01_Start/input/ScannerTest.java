@@ -1,4 +1,4 @@
-package com.javaquasar.java.core.chapter_01_Start;
+package com.javaquasar.java.core.chapter_01_Start.input;
 
 // Импорт системного класса
 import java.util.Scanner;
