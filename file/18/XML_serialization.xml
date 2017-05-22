@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_121" class="java.beans.XMLDecoder">
+ <object class="com.javaquasar.java.core.chapter_18_XML.serialization.Line" id="Line0">
+  <void property="first">
+   <void property="x">
+    <double>1.0</double>
+   </void>
+   <void property="y">
+    <double>2.0</double>
+   </void>
+  </void>
+  <void property="second">
+   <void property="x">
+    <double>3.0</double>
+   </void>
+   <void property="y">
+    <double>4.0</double>
+   </void>
+  </void>
+ </object>
+</java>
