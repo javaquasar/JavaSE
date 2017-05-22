@@ -3,7 +3,7 @@ package com.javaquasar.java.core.chapter_01_Start.output.number;
 /**
  * Created by Java Quasar on 16.05.17.
  */
-s
+
 /*Форматированный вывод числа*
 
 Вывести число 100 в шестнадцатеричном и восьмеричном представлении. 
