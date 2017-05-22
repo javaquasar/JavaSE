@@ -99,7 +99,7 @@ public class HilbertDrawing {
     static Graphics2D graphics;
 
     public static void main(String[] args) throws IOException {
-        srcImage = ImageIO.read(new File("./file/24/hilbert_drawing.png"));
+        srcImage = ImageIO.read(new File("./file/30/hilbert_drawing.png"));
 
         dstImage = new BufferedImage(512, 512, BufferedImage.TYPE_INT_RGB);
         graphics = dstImage.createGraphics();
