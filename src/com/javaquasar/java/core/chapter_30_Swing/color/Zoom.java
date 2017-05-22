@@ -9,6 +9,7 @@ import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.event.InputEvent;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 
@@ -19,7 +20,7 @@ import javax.swing.JPanel;
  @see http://stackoverflow.com/questions/3742731
  @see https://sites.google.com/site/drjohnbmatthews/kineticmodel
  */
-public class Zoom extends JPanel implements MouseMotionListener {
+public class Zoom extends JPanel implements MouseMotionListener, MouseListener {
 
     private static final int SIZE = 16;
     private static final int S2 = SIZE / 2;
@@ -55,6 +56,8 @@ public class Zoom extends JPanel implements MouseMotionListener {
             + String.format("%08X", c));
     }
 
+
+
     @Override
     public void mouseDragged(MouseEvent e) {
         int x = e.getXOnScreen();
@@ -82,5 +85,30 @@ public class Zoom extends JPanel implements MouseMotionListener {
                 create();
             }
         });
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
     }
 }
