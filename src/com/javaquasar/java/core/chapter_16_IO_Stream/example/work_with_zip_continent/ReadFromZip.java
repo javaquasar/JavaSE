@@ -3,6 +3,9 @@ package com.javaquasar.java.core.chapter_16_IO_Stream.example.work_with_zip_cont
 import java.io.*;
 import java.util.zip.*;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class ReadFromZip {
 
 	public static void main(String[] args) {

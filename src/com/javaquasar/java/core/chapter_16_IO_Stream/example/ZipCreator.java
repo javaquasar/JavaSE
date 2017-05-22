@@ -3,6 +3,9 @@ package com.javaquasar.java.core.chapter_16_IO_Stream.example;
 import java.io.*;
 import java.util.zip.*;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class ZipCreator {
 
 	public static void main(String[] args) {

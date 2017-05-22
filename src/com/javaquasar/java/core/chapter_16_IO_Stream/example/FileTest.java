@@ -3,6 +3,9 @@ package com.javaquasar.java.core.chapter_16_IO_Stream.example;
 import java.io.*;
 import java.util.StringTokenizer;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class FileTest {
 
 	void readWrite() {
