@@ -1,4 +1,4 @@
-package com.javaquasar.java.core.chapter_16_IO_Stream.serialization;
+package com.javaquasar.java.core.chapter_16_IO_Stream.example.serialization;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
