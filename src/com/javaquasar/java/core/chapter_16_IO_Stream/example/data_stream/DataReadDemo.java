@@ -1,4 +1,4 @@
-package com.javaquasar.java.core.chapter_16_IO_Stream.example;
+package com.javaquasar.java.core.chapter_16_IO_Stream.example.data_stream;
 
 import java.io.*;
 import java.util.*;
@@ -9,7 +9,7 @@ import java.util.*;
 public class DataReadDemo {
 
 	public static void main(String[] args) {
-		try (DataInputStream in = new DataInputStream(new FileInputStream("data.dat"))) {
+		try (DataInputStream in = new DataInputStream(new FileInputStream("./file/16/data_stream.dat"))) {
 			double x = in.readDouble();
 			String s = in.readUTF();
 			List<Integer> list = new ArrayList<>();

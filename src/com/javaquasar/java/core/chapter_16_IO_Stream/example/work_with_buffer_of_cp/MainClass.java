@@ -1,4 +1,4 @@
-package com.javaquasar.java.core.chapter_16_IO_Stream.work_with_buffer_of_cp;
+package com.javaquasar.java.core.chapter_16_IO_Stream.example.work_with_buffer_of_cp;
 
 import java.awt.Button;
 import java.awt.Frame;

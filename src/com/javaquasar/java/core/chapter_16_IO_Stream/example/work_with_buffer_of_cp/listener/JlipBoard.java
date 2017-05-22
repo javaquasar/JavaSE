@@ -1,4 +1,4 @@
-package com.javaquasar.java.core.chapter_16_IO_Stream.work_with_buffer_of_cp.listener;
+package com.javaquasar.java.core.chapter_16_IO_Stream.example.work_with_buffer_of_cp.listener;
 
 import java.awt.*;
 import java.awt.datatransfer.*;

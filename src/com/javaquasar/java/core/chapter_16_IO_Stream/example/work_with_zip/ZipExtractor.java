@@ -1,4 +1,4 @@
-package com.javaquasar.java.core.chapter_16_IO_Stream.example;
+package com.javaquasar.java.core.chapter_16_IO_Stream.example.work_with_zip;
 
 import java.io.*;
 import java.util.zip.*;

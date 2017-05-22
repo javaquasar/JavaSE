@@ -1,4 +1,4 @@
-package com.javaquasar.java.core.chapter_16_IO_Stream.example;
+package com.javaquasar.java.core.chapter_16_IO_Stream.example.data_stream;
 
 import java.io.*;
 
@@ -11,7 +11,7 @@ public class DataStreamDemo {
 		double x = 4.5;
 		String s = "all";
 		int[] a = { 1, 2, 3 };
-		try (DataOutputStream out = new DataOutputStream(new FileOutputStream("data.dat"))) {
+		try (DataOutputStream out = new DataOutputStream(new FileOutputStream("./file/16/data_stream.dat"))) {
 			out.writeDouble(x);
 			out.writeUTF(s);
 			for (int k : a)
