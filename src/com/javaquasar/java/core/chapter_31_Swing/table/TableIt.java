@@ -22,6 +22,9 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class TableIt {
 
 	class MyTableCellRenderer extends JLabel implements TableCellRenderer {

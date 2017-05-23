@@ -6,6 +6,9 @@ import java.io.*;
 import java.util.Scanner;
 import javax.swing.*;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class SumWriter extends JFrame implements ActionListener {
 	private JFileChooser chooser = new JFileChooser();
 	private JButton buttonOpen;

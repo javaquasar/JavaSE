@@ -3,6 +3,9 @@ package com.javaquasar.java.core.chapter_31_Swing;
 import java.awt.event.*;
 import javax.swing.*;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class TextFieldsAndButton extends JPanel implements ActionListener {
 	private static final long serialVersionUID = 1562119581212356078L;
 	private JButton button;

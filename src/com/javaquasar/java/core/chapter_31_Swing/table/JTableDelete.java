@@ -8,6 +8,9 @@ import javax.swing.border.*;
 import javax.swing.table.*;
 import javax.swing.*;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class JTableDelete extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;

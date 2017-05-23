@@ -9,6 +9,9 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class FirstTable extends JFrame implements ActionListener {
 
   /**

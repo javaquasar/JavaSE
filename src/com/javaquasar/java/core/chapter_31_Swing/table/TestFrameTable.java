@@ -15,6 +15,9 @@ import javax.swing.JTable;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class TestFrameTable extends JFrame implements ActionListener {
 
 	static int i = 0;

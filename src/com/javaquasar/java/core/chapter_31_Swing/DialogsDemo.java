@@ -2,6 +2,9 @@ package com.javaquasar.java.core.chapter_31_Swing;
 
 import javax.swing.JOptionPane;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class DialogsDemo {
 
 	public static void main(String[] args) {

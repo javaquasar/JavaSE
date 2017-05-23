@@ -20,6 +20,9 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class TableSortDemo extends JFrame {
 	protected JTable table = new JTable();
 

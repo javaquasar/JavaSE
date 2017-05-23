@@ -7,6 +7,9 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class JTableListSelectionListener {
 
 	public static void main(String[] a) {

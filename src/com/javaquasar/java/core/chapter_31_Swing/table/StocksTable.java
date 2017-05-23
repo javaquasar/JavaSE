@@ -10,6 +10,9 @@ import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.table.*;
 
+/**
+ * Created by Java Quasar on 16.05.17.
+ */
 public class StocksTable extends JFrame {
 	protected JTable m_table;
 	protected StockTableData m_data;
