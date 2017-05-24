@@ -34,6 +34,7 @@ public class TestTrigger {
                         " user_action text,\n" +
                         " created_at text\n" +
                         ");");
+
         stat.executeUpdate(
                 "CREATE TRIGGER validate_email_before_insert_leads BEFORE INSERT ON leads\n" +
                         "BEGIN\n" +
@@ -74,6 +75,16 @@ public class TestTrigger {
                         " DATETIME('NOW')\n" +
                         " ) ;\n" +
                         "END;");
+
+//        stat.executeUpdate(
+//                "CREATE PROCEDURE inslist(i integer) AS\n" +
+//                        "BEGIN\n" +
+//                        "  WHILE i>0 LOOP\n" +
+//                        "    INSERT INTO mytable VALUES (i);\n" +
+//                        "    i := i - 1;\n" +
+//                        "  END LOOP;\n" +
+//                        "  RETURN 'ok';\n" +
+//                        "END;");
         try {
             stat.executeUpdate("INSERT INTO leads (\n" +
                     " first_name,\n" +
