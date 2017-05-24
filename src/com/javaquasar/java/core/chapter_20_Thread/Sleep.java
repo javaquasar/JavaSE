@@ -3,7 +3,7 @@ package com.javaquasar.java.core.chapter_20_Thread;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by artur on 24.05.17.
+ * Created by Java Quasar on 16.05.17.
  */
 //На данный момент рекомендуется использовать не Thread.sleep, а TimeUnit
 public class Sleep {
