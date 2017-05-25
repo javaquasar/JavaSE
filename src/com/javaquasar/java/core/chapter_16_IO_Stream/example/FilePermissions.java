@@ -10,6 +10,17 @@ import java.util.Set;
 /**
  * Created by Java Quasar on 26.05.2017.
  */
+
+/*
+Класс Java File имеет возможность установить права доступа к файлам, но он не является универсальным.
+Самый большой его недостаток в том, что вы можете разделить права доступа к файлам только на два типа пользователей —
+на владельца и на всех остальных. Вы не можете установить различные права доступа к файлам для группы или других пользователей.
+
+Начиная с Java 7 был введен PosixFilePermission Enum и java.nio.file.Files включая метод setPosixFilePermissions(Path path, Set perms),
+которые могут быть использованы для установки прав доступа к файлам.
+
+Вот простая программа, которая наглядно показывает преимущества PosixFilePermission:
+ */
 public class FilePermissions {
     public static void main(String[] args) throws IOException {
         File file = new File("./file/16/file_with_permissions.txt");
