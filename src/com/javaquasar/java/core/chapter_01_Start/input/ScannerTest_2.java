@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Created by Java Quasar on 16.05.17.
  */
-public class ScannerTest {
+public class ScannerTest_2 {
     @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
