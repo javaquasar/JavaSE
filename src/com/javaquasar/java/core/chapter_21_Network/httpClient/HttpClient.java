@@ -36,6 +36,7 @@ public class HttpClient {
         connection.setRequestMethod(requestType.getTypeName());
         connection.setRequestProperty("User-Agent", USER_AGENT);
         connection.setRequestProperty("Content-Type", contentType.getTypeName());
+        connection.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 
         switch (requestType) {
             case GET:
