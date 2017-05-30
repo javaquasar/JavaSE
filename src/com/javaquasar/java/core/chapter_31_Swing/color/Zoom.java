@@ -1,26 +1,27 @@
 package com.javaquasar.java.core.chapter_31_Swing.color;
 
-import java.awt.AWTException;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-import java.awt.Graphics;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.event.InputEvent;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.security.auth.login.Configuration;
+import javax.swing.*;
+import javax.swing.plaf.ColorUIResource;
+import javax.swing.plaf.metal.DefaultMetalTheme;
+import javax.swing.plaf.metal.MetalLookAndFeel;
 
 /**
  @see http://stackoverflow.com/questions/3742731
  @see https://sites.google.com/site/drjohnbmatthews/kineticmodel
  */
 public class Zoom extends JPanel implements MouseMotionListener, MouseListener {
+
+    //private static final String METAL_LOOK_AND_FEEL = "javax.swing.plaf.metal.MetalLookAndFeel";
+    private static final String METAL_LOOK_AND_FEEL = "com.sun.java.swing.plaf.gtk.GTKLookAndFeel";
+    //private static final String METAL_LOOK_AND_FEEL = "com.sun.java.swing.plaf.motif.MotifLookAndFeel";
+    //private static final String METAL_LOOK_AND_FEEL = "com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
 
     private static final int SIZE = 16;
     private static final int S2 = SIZE / 2;
@@ -30,6 +31,59 @@ public class Zoom extends JPanel implements MouseMotionListener, MouseListener {
 
     public Zoom() {
         super(true);
+
+        try {
+            String lookAndFeel = METAL_LOOK_AND_FEEL;
+            if (METAL_LOOK_AND_FEEL.equals(lookAndFeel)) {
+                MetalLookAndFeel.setCurrentTheme(new DefaultMetalTheme() {
+                    private final ColorUIResource primary1 = new ColorUIResource(0x4d6781);
+                    private final ColorUIResource primary2 = new ColorUIResource(0x7a96b0);
+                    private final ColorUIResource primary3 = new ColorUIResource(0xc8d4e2);
+                    private final ColorUIResource secondary1 = new ColorUIResource(0x000000);
+                    private final ColorUIResource secondary2 = new ColorUIResource(0xaaaaaa);
+                    private final ColorUIResource secondary3 = new ColorUIResource(0xdfdfdf);
+
+                    @Override
+                    protected ColorUIResource getPrimary1() {
+                        return this.primary1;
+                    }
+
+                    @Override
+                    protected ColorUIResource getPrimary2() {
+                        return this.primary2;
+                    }
+
+                    @Override
+                    protected ColorUIResource getPrimary3() {
+                        return this.primary3;
+                    }
+
+                    @Override
+                    protected ColorUIResource getSecondary1() {
+                        return this.secondary1;
+                    }
+
+                    @Override
+                    protected ColorUIResource getSecondary2() {
+                        return this.secondary2;
+                    }
+
+                    @Override
+                    protected ColorUIResource getSecondary3() {
+                        return this.secondary3;
+                    }
+                });
+
+                UIManager.put("swing.boldMetal", Boolean.FALSE);
+            }
+
+            UIManager.setLookAndFeel(lookAndFeel);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
         this.setPreferredSize(new Dimension(SIZE * SCALE, SIZE * SCALE));
         img = new BufferedImage(SIZE, SIZE, BufferedImage.TYPE_INT_RGB);
         try {
@@ -52,8 +106,8 @@ public class Zoom extends JPanel implements MouseMotionListener, MouseListener {
         int x = p.x * SIZE / getWidth();
         int y = p.y * SIZE / getHeight();
         int c = img.getRGB(x, y);
-        this.setToolTipText(x + "," + y + ": "
-            + String.format("%08X", c));
+        String color = String.format("%08X", c);
+        this.setToolTipText(x + "," + y + ": " + color);
     }
 
 
@@ -75,11 +129,11 @@ public class Zoom extends JPanel implements MouseMotionListener, MouseListener {
         f.pack();
         f.setVisible(true);
         zoom.addMouseMotionListener(zoom);
+        zoom.addMouseListener(zoom);
     }
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
-
             @Override
             public void run() {
                 create();
@@ -89,7 +143,20 @@ public class Zoom extends JPanel implements MouseMotionListener, MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        if(SwingUtilities.isRightMouseButton(e)) {
+            Point p = e.getPoint();
+            int x = p.x * SIZE / getWidth();
+            int y = p.y * SIZE / getHeight();
+            int c = img.getRGB(x, y);
+            String color = String.format("%08X", c);
+            this.setToolTipText(x + "," + y + ": " + color);
+            setClipboard(color);
+            Color initialBackground = new Color(c);
+            Color col = JColorChooser.showDialog(null, "Choose a Color", initialBackground);
+            if (col != null) {
+                setClipboard(col.toString());
+            }
+        }
     }
 
     @Override
@@ -111,4 +178,20 @@ public class Zoom extends JPanel implements MouseMotionListener, MouseListener {
     public void mouseExited(MouseEvent e) {
 
     }
+
+    public void setClipboard(String str) {
+        StringSelection stringSelection = new StringSelection(str);
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
+    }
 }
+
+
+
+
+
+
+
+
+
+
