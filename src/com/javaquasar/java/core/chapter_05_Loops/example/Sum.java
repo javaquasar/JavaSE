@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 /**
  * Created by Java Quasar on 16.05.17.
- *//**
- * Created by Java Quasar on 16.05.17.
  */
 public class Sum {
 
