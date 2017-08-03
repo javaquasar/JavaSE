@@ -99,14 +99,13 @@ public class HilbertDrawing {
     static Graphics2D graphics;
 
     public static void main(String[] args) throws IOException {
-        srcImage = ImageIO.read(new File("./file/30/hilbert_drawing.png"));
-
-        dstImage = new BufferedImage(512, 512, BufferedImage.TYPE_INT_RGB);
+        srcImage = ImageIO.read(new File("./file/31/hilbert_drawing.png")); //
+        dstImage = new BufferedImage(srcImage.getWidth(), srcImage.getHeight(), BufferedImage.TYPE_INT_RGB);
         graphics = dstImage.createGraphics();
         graphics.setColor(Color.WHITE);
-        graphics.fill(new Rectangle2D.Double(0, 0, 512, 512));
+        graphics.fill(new Rectangle2D.Double(0, 0, srcImage.getWidth(), srcImage.getHeight()));
         graphics.setColor(Color.BLACK);
-        drawHilbertCurve(new Point(0, 0), 512, 0);
+        drawHilbertCurve(new Point(0, 0), srcImage.getWidth(), 0);
         int width = dstImage.getWidth(null);
         int height = dstImage.getHeight(null);
         JFrame frame = new JFrame();
