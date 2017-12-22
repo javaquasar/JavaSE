@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_11" class="java.beans.XMLDecoder">
+ <object class="core.lecture3_09_Swing.practice.task_5_08.group.Group" id="Group0">
+  <void property="students">
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Артур</string>
+     </void>
+     <void property="surname">
+      <string>Бузов</string>
+     </void>
+     <void property="year">
+      <int>1990</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Виталий</string>
+     </void>
+     <void property="surname">
+      <string>Іванов</string>
+     </void>
+     <void property="year">
+      <int>1994</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Олег</string>
+     </void>
+     <void property="surname">
+      <string>Коновалов</string>
+     </void>
+     <void property="year">
+      <int>1991</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Кристина</string>
+     </void>
+     <void property="surname">
+      <string>Бондалетова</string>
+     </void>
+     <void property="year">
+      <int>1989</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Виталий</string>
+     </void>
+     <void property="surname">
+      <string>Гончар</string>
+     </void>
+     <void property="year">
+      <int>1979</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Евгений</string>
+     </void>
+     <void property="surname">
+      <string>Пехуля</string>
+     </void>
+     <void property="year">
+      <int>1995</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Диана</string>
+     </void>
+     <void property="surname">
+      <string>Баленко</string>
+     </void>
+     <void property="year">
+      <int>1990</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Анастасия</string>
+     </void>
+     <void property="surname">
+      <string>Ваарметс</string>
+     </void>
+     <void property="year">
+      <int>1991</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Павел</string>
+     </void>
+     <void property="surname">
+      <string>Вайсер</string>
+     </void>
+     <void property="year">
+      <int>2000</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Виталий</string>
+     </void>
+     <void property="surname">
+      <string>Карнаух</string>
+     </void>
+     <void property="year">
+      <int>1988</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Юрий</string>
+     </void>
+     <void property="surname">
+      <string>Беженцев</string>
+     </void>
+     <void property="year">
+      <int>1987</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Владислав</string>
+     </void>
+     <void property="surname">
+      <string>Высоцкий</string>
+     </void>
+     <void property="year">
+      <int>1989</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Светлана</string>
+     </void>
+     <void property="surname">
+      <string>Крыжний</string>
+     </void>
+     <void property="year">
+      <int>1989</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Олег</string>
+     </void>
+     <void property="surname">
+      <string>Савченко</string>
+     </void>
+     <void property="year">
+      <int>1960</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Артур</string>
+     </void>
+     <void property="surname">
+      <string>Плуум</string>
+     </void>
+     <void property="year">
+      <int>1997</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="core.lecture3_09_Swing.practice.task_5_08.group.Student">
+     <void property="name">
+      <string>Кирил</string>
+     </void>
+     <void property="surname">
+      <string>Їтест</string>
+     </void>
+     <void property="year">
+      <int>1989</int>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
