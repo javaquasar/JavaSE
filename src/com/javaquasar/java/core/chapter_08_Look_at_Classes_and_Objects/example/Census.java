@@ -8,8 +8,6 @@ public class Census {
 	private String comments;
 
 	public Census(int year, int population, String comments) {
-		super();
-		// TODO Auto-generated constructor stub
 		this.year = year;
 		this.population = population;
 		this.comments = comments;
