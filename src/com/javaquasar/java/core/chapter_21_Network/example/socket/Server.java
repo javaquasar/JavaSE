@@ -1,4 +1,4 @@
-package core.lecture3_11_Network.example.socket;
+package com.javaquasar.java.core.chapter_21_Network.example.socket;
 
 import java.net.*;
 import java.io.*;

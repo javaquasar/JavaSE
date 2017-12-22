@@ -1,4 +1,4 @@
-package core.lecture3_11_Network.practice.task_5_02_2;
+package com.javaquasar.java.core.chapter_21_Network.practice.task_5_02_2;
 
 import java.io.*;
 import java.net.Socket;

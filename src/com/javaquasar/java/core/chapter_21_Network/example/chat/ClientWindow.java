@@ -1,4 +1,4 @@
-package core.lecture3_11_Network.example.chat;
+package com.javaquasar.java.core.chapter_21_Network.example.chat;
 
 import java.io.*;
 import java.net.Socket;

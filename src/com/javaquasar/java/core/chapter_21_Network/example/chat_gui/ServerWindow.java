@@ -1,4 +1,4 @@
-package core.lecture3_11_Network.example.chat;
+package com.javaquasar.java.core.chapter_21_Network.example.chat_gui;
 
 import java.net.*;
 import java.util.*;
@@ -52,8 +52,7 @@ public class ServerWindow {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(getPanelTop(), BorderLayout.SOUTH);
 		frame.getContentPane().add(getScrollPaneClients(), BorderLayout.WEST);
-		frame.getContentPane()
-				.add(getScrollPaneMessages(), BorderLayout.CENTER);
+		frame.getContentPane().add(getScrollPaneMessages(), BorderLayout.CENTER);
 	}
 
 	private JPanel getPanelTop() {
@@ -97,8 +96,7 @@ public class ServerWindow {
 	private JScrollPane getScrollPaneClients() {
 		if (scrollPaneClients == null) {
 			scrollPaneClients = new JScrollPane();
-			scrollPaneClients.setBorder(new TitledBorder(null, "Клиенты",
-					TitledBorder.LEADING, TitledBorder.TOP, null, null));
+			scrollPaneClients.setBorder(new TitledBorder(null, "Клиенты", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 			scrollPaneClients.setPreferredSize(new Dimension(200, 4));
 			scrollPaneClients.setViewportView(getTextAreaClients());
 		}
@@ -108,8 +106,7 @@ public class ServerWindow {
 	private JScrollPane getScrollPaneMessages() {
 		if (scrollPaneMessages == null) {
 			scrollPaneMessages = new JScrollPane();
-			scrollPaneMessages.setBorder(new TitledBorder(null, "Сообщения",
-					TitledBorder.LEADING, TitledBorder.TOP, null, null));
+			scrollPaneMessages.setBorder(new TitledBorder(null, "Сообщения", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 			scrollPaneMessages.setViewportView(getTextAreaMessages());
 		}
 		return scrollPaneMessages;
@@ -136,8 +133,8 @@ public class ServerWindow {
 
 		public ClientThread(Socket clientSocket) throws Exception {
 			// Получаем потоки ввода/вывода от клиента:
-			input = new BufferedReader(new InputStreamReader(
-					clientSocket.getInputStream()));// поток ввода
+			input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));// поток
+																								// ввода
 			output = new PrintWriter(clientSocket.getOutputStream(), true);// поток
 																			// вывода
 			name = input.readLine(); // читаем имя клиента
@@ -186,12 +183,14 @@ public class ServerWindow {
 														// форму
 						@Override
 						public void run() {
-							getTextAreaMessages().append(
-									userName1 + ":" + msg1 + "\n");// пишем на
-																	// форму в
-																	// TextAreaHistory
-																	// информацию
-																	// о клиенте
+							getTextAreaMessages().append(userName1 + ":" + msg1 + "\n");// пишем
+																						// на
+																						// форму
+																						// в
+																						// TextAreaHistory
+																						// информацию
+																						// о
+																						// клиенте
 						}
 					});
 		}
@@ -218,8 +217,9 @@ public class ServerWindow {
 						Socket clientSocket = serverSocket.accept(); // сервер
 																		// ожидает
 																		// клиента
-						final ClientThread client = new ClientThread(
-								clientSocket); // создаем нового клиента
+						final ClientThread client = new ClientThread(clientSocket); // создаем
+																					// нового
+																					// клиента
 						clients.add(client); // добавляем клиента в список
 												// клиентов
 						// Отправляем основной нити объект Runnable с методом
@@ -229,8 +229,7 @@ public class ServerWindow {
 							public void run() {
 								// Пишем на форму в TextArea информацию о
 								// клиенте:
-								getTextAreaClients().append(
-										client.getUserName() + "\n");
+								getTextAreaClients().append(client.getUserName() + "\n");
 							}
 						});
 					} catch (Exception ex) {

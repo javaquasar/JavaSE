@@ -1,4 +1,4 @@
-package core.lecture3_11_Network.example;
+package com.javaquasar.java.core.chapter_21_Network.example;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

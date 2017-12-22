@@ -5,110 +5,109 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Person {
-	private String lastname = null;
-	private String name = null;
-	private String patronymic = null;
-	private Calendar birthday = null;
-	private String phone = null;
-	private String email = null;
-	private String skype = null;
-	
-	public Person(String lastname, String name, String patronymic, int year, int month, int day, String phone, String email, String skype) {
-		this.lastname = lastname;
-		this.name = name;
-		this.patronymic = patronymic;
-		this.birthday = new GregorianCalendar(year, month, day);
-		this.phone = phone;
-		this.email = email;
-		this.skype = skype;
-	}
+    private String lastname;
+    private String name;
+    private String patronymic;
+    private Calendar birthday;
+    private String phone;
+    private String email;
+    private String skype;
 
-	public static void main (String[] args) {
-		//Date date = new Date(1990, 8, 4);
-		Calendar c = new GregorianCalendar(2013, 11, 25);
-	}
-	
-	public String getLastname() {
-		return lastname;
-	}
+    public Person(String lastname, String name, String patronymic, int year, int month, int day, String phone, String email, String skype) {
+        this.lastname = lastname;
+        this.name = name;
+        this.patronymic = patronymic;
+        this.birthday = new GregorianCalendar(year, month, day);
+        this.phone = phone;
+        this.email = email;
+        this.skype = skype;
+    }
 
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
+    public static void main(String[] args) {
+        //Date date = new Date(1990, 8, 4);
+        Calendar c = new GregorianCalendar(2013, 11, 25);
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getLastname() {
+        return lastname;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
 
-	public String getPatronymic() {
-		return patronymic;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setPatronymic(String patronymic) {
-		this.patronymic = patronymic;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public Calendar getBirthday() {
-		return birthday;
-	}
+    public String getPatronymic() {
+        return patronymic;
+    }
 
-	public void setBirthday(Calendar birthday) {
-		this.birthday = birthday;
-	}
+    public void setPatronymic(String patronymic) {
+        this.patronymic = patronymic;
+    }
 
-	public String getPhone() {
-		return phone;
-	}
-	
-	public int getYear() {
-		return birthday.get(Calendar.YEAR);
-	}
-	
-	public int getMonth() {
-		return birthday.get(Calendar.MONTH);
-	}
-	
-	public int getDay() {
-		return birthday.get(Calendar.DAY_OF_MONTH);
-	}
+    public Calendar getBirthday() {
+        return birthday;
+    }
 
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
+    public void setBirthday(Calendar birthday) {
+        this.birthday = birthday;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public String getPhone() {
+        return phone;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public int getYear() {
+        return birthday.get(Calendar.YEAR);
+    }
 
-	public String getSkype() {
-		return skype;
-	}
+    public int getMonth() {
+        return birthday.get(Calendar.MONTH);
+    }
 
-	public void setSkype(String skype) {
-		this.skype = skype;
-	}
+    public int getDay() {
+        return birthday.get(Calendar.DAY_OF_MONTH);
+    }
 
-	public static Integer calculateAge(final Date birthday)
-	{
-		Calendar dob = Calendar.getInstance();
-		Calendar today = Calendar.getInstance();
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
-		dob.setTime(birthday);
-		// include day of birth
-		dob.add(Calendar.DAY_OF_MONTH, -1);
+    public String getEmail() {
+        return email;
+    }
 
-		int age = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);
-		if (today.get(Calendar.DAY_OF_YEAR) <= dob.get(Calendar.DAY_OF_YEAR)) {
-			age--;
-		}
-		return age;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSkype() {
+        return skype;
+    }
+
+    public void setSkype(String skype) {
+        this.skype = skype;
+    }
+
+    public static Integer calculateAge(final Date birthday) {
+        Calendar dob = Calendar.getInstance();
+        Calendar today = Calendar.getInstance();
+
+        dob.setTime(birthday);
+        // include day of birth
+        dob.add(Calendar.DAY_OF_MONTH, -1);
+
+        int age = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);
+        if (today.get(Calendar.DAY_OF_YEAR) <= dob.get(Calendar.DAY_OF_YEAR)) {
+            age--;
+        }
+        return age;
+    }
 }

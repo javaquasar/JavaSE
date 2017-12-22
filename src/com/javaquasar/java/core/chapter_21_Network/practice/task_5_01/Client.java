@@ -1,4 +1,4 @@
-package core.lecture3_11_Network.practice.task_5_01;
+package com.javaquasar.java.core.chapter_21_Network.practice.task_5_01;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

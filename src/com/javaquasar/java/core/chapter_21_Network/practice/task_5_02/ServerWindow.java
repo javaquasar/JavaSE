@@ -1,4 +1,4 @@
-package core.lecture3_11_Network.practice.task_5_02;
+package com.javaquasar.java.core.chapter_21_Network.practice.task_5_02;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
