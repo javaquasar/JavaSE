@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GroupData Name="Иуст-08">
+    <StudentsData>
+        <StudentData Name="Олег" Surname="Чабан" AvgScore="85">
+            <RegistrationCityData Name="Харьков"/>
+        </StudentData>
+        <StudentData Name="Даниель" Surname="Бонал" AvgScore="76">
+            <RegistrationCityData Name="п.Комсомольское"/>
+        </StudentData>
+        <StudentData Name="Александра" Surname="Селиверстова" AvgScore="94">
+            <RegistrationCityData Name="Харьков"/>
+        </StudentData>
+    </StudentsData>
+</GroupData>

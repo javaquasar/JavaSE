@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_11" class="java.beans.XMLDecoder">
+ <object class="buzov.lecture3_06.practice.task_5_04.Group">
+  <void property="name">
+   <string>АТР</string>
+  </void>
+  <void property="students">
+   <array class="buzov.lecture3_06.practice.task_5_04.Student" length="3">
+    <void index="0">
+     <object class="buzov.lecture3_06.practice.task_5_04.Student">
+      <void property="cours">
+       <string>5</string>
+      </void>
+      <void property="group">
+       <string>АТР</string>
+      </void>
+      <void property="lastname">
+       <string>Бузов</string>
+      </void>
+      <void property="name">
+       <string>Аурур</string>
+      </void>
+     </object>
+    </void>
+    <void index="1">
+     <object class="buzov.lecture3_06.practice.task_5_04.Student">
+      <void property="cours">
+       <string>4</string>
+      </void>
+      <void property="group">
+       <string>АТР</string>
+      </void>
+      <void property="lastname">
+       <string>Бойко</string>
+      </void>
+      <void property="name">
+       <string>Иван</string>
+      </void>
+     </object>
+    </void>
+    <void index="2">
+     <object class="buzov.lecture3_06.practice.task_5_04.Student">
+      <void property="cours">
+       <string>3</string>
+      </void>
+      <void property="group">
+       <string>АТР</string>
+      </void>
+      <void property="lastname">
+       <string>Фейман</string>
+      </void>
+      <void property="name">
+       <string>Кирил</string>
+      </void>
+     </object>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>

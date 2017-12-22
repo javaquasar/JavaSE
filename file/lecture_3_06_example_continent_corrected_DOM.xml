@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><ContinentData Name="Европа">
+	<CountriesData>
+		<CountryData Area="603700" Name="Украина" Population="46314736">
+			<CapitalData Name="Киев"/>
+		</CountryData>
+		<CountryData Area="547030" Name="Франция" Population="61875822">
+			<CapitalData Name="Париж"/>
+		</CountryData>
+		<CountryData Area="357022" Name="Германия" Population="82310000">
+			<CapitalData Name="Берлин"/>
+		</CountryData>
+	</CountriesData>
+</ContinentData>

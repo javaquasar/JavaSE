@@ -1,0 +1,12 @@
+cat | кот
+chicken | курица
+cock | петух
+cow | корова
+duck | утка
+finger | палец
+hamster | хомяк
+horse | конь
+mause | мышь
+parrot | попугай
+pig | свинья
+sheep | овца

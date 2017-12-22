@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Sat Jan 17 2015 20:09:14 GMT+0200 (Финляндия (зима)) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="GroupData">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="StudentsData">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="StudentData" maxOccurs="unbounded">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="RegistrationCityData">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="Name" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                         <xs:attribute name="Name" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="Surname" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="AvgScore" type="xs:int"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+                     <xs:attribute name="Name" type="xs:string"></xs:attribute>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
