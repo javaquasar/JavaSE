@@ -10,6 +10,7 @@ public class IfTest {
     @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число x.");
         double x = scanner.nextDouble();
         double y;
         if (x < -8)

@@ -31,17 +31,17 @@ public class Test {
 
 	// Методы инициализации и загрузки памяти выглядят так:
 	private void init() {
-		strongList = new ArrayList<BigObject>();
-		softList = new ArrayList<Reference<BigObject>>();
-		weakList = new ArrayList<Reference<BigObject>>();
-		phantomList = new ArrayList<Reference<BigObject>>();
-		loadMemoryList = new ArrayList<String>();
-		queue = new ReferenceQueue<BigObject>();
+		strongList = new ArrayList<>();
+		softList = new ArrayList<>();
+		weakList = new ArrayList<>();
+		phantomList = new ArrayList<>();
+		loadMemoryList = new ArrayList<>();
+		queue = new ReferenceQueue<>();
 		for (int i = 0; i < 3; i++) {
 			strongList.add(new BigObject(i));
-			softList.add(new SoftReference<BigObject>(new BigObject(i)));
-			weakList.add(new WeakReference<BigObject>(new BigObject(i)));
-			phantomList.add(new PhantomReference<BigObject>(new BigObject(i), queue));
+			softList.add(new SoftReference<>(new BigObject(i)));
+			weakList.add(new WeakReference<>(new BigObject(i)));
+			phantomList.add(new PhantomReference<>(new BigObject(i), queue));
 		}
 		printLists();
 	}
