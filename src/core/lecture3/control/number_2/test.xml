@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_25" class="java.beans.XMLDecoder">
+ <object class="buzov.lecture3.control2.InformationAboutApplicants" id="InformationAboutApplicants0">
+  <void property="applicants">
+   <void method="put">
+    <string>Синяговский Олег</string>
+    <object class="buzov.lecture3.control2.Applicant">
+     <void property="day">
+      <int>14</int>
+     </void>
+     <void property="email">
+      <string>buzov.artur@gmail.com</string>
+     </void>
+     <void property="lastname">
+      <string>Синяговский</string>
+     </void>
+     <void property="month">
+      <int>5</int>
+     </void>
+     <void property="name">
+      <string>Олег</string>
+     </void>
+     <void property="programmingLanguages">
+      <object class="java.util.HashSet" id="HashSet0">
+       <void method="add">
+        <string>c++</string>
+       </void>
+       <void method="add">
+        <string>java</string>
+       </void>
+      </object>
+     </void>
+     <void property="year">
+      <int>1990</int>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>Подкуйко Кирил</string>
+    <object class="buzov.lecture3.control2.Applicant">
+     <void property="day">
+      <int>14</int>
+     </void>
+     <void property="email">
+      <string>buzov.artur@yandex.ru</string>
+     </void>
+     <void property="lastname">
+      <string>Подкуйко</string>
+     </void>
+     <void property="month">
+      <int>5</int>
+     </void>
+     <void property="name">
+      <string>Кирил</string>
+     </void>
+     <void property="programmingLanguages">
+      <object idref="HashSet0"/>
+     </void>
+     <void property="year">
+      <int>1990</int>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>Бузов Артур</string>
+    <object class="buzov.lecture3.control2.Applicant">
+     <void property="day">
+      <int>14</int>
+     </void>
+     <void property="email">
+      <string>c0nst@money.simply.net</string>
+     </void>
+     <void property="lastname">
+      <string>Бузов</string>
+     </void>
+     <void property="month">
+      <int>5</int>
+     </void>
+     <void property="name">
+      <string>Артур</string>
+     </void>
+     <void property="programmingLanguages">
+      <object idref="HashSet0"/>
+     </void>
+     <void property="year">
+      <int>1990</int>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>Картавкин Павел</string>
+    <object class="buzov.lecture3.control2.Applicant">
+     <void property="day">
+      <int>14</int>
+     </void>
+     <void property="email">
+      <string>Name.Sur_name@gmail.com</string>
+     </void>
+     <void property="lastname">
+      <string>Картавкин</string>
+     </void>
+     <void property="month">
+      <int>5</int>
+     </void>
+     <void property="name">
+      <string>Павел</string>
+     </void>
+     <void property="programmingLanguages">
+      <object idref="HashSet0"/>
+     </void>
+     <void property="year">
+      <int>1990</int>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

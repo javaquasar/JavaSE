@@ -1,0 +1,3 @@
+package core.lecture3_08_Reflection.practice.kv; import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;public class GenerateExpression {public static void printHello(String expression) throws ScriptException {ScriptEngineManager engineManager = new ScriptEngineManager();ScriptEngine scriptEngine = engineManager.getEngineByName("JavaScript");scriptEngine.eval("c = " + expression + ";" + "print(c)");} }
