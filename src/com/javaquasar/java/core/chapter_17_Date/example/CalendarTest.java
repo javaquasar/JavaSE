@@ -7,7 +7,7 @@ import java.util.Date;
 /**
  * Created by Java Quasar on 16.05.17.
  */
-public class DateTest {
+public class CalendarTest {
 
 	public static void main(String[] args) {
 		// Установка времени с использованием экземпляра Date:
