@@ -26,6 +26,9 @@ public class SimpleDateFormatTest {
         java_8(date);
 
         custom(date, "dddd M");
+
+        String originalDate = "Tue, 22 Nov 2016 01:03:00 +0300";
+        System.out.println(convertStringDateToRussian(originalDate));
     }
 
     public static void java_6(Date date) throws ParseException {
@@ -61,6 +64,37 @@ public class SimpleDateFormatTest {
         SimpleDateFormat sdf = new SimpleDateFormat(format, locale);
         sdf.setDateFormatSymbols(dfs);
         return sdf.format(date); // пт, 09 декабря 2016
+    }
+
+    public static String convertStringDateToRussian(String mDate) {
+
+        String[] engWeek = {
+                "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
+                "Sun"};
+        String[] ruWeek = {
+                "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота",
+                "Воскресенье"};
+        String[] engMonths = {
+                "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+        String[] ruMonths = {
+                "января", "февраля", "марта", "апреля", "мая", "июня",
+                "июля", "августа", "сентября", "октября", "ноября", "декабря"};
+        for (int t = 0; t < engWeek.length; t++) {
+            if (mDate.contains(engWeek[t])) {
+                mDate = mDate.replace(engWeek[t], ruWeek[t]);
+                break;
+            }
+        }
+
+        for (int t = 0; t < engMonths.length; t++) {
+            if (mDate.contains(engMonths[t])) {
+                mDate = mDate.replace(engMonths[t], ruMonths[t]);
+                break;
+            }
+        }
+
+        return mDate;
     }
 
 
