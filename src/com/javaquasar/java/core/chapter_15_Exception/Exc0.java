@@ -11,8 +11,8 @@ class Exc0 {
 			a = 42 / d;
 			System.out.println("This will not be printed.");
 			throw new ArithmeticException();
-		//} catch (ArithmeticException e) { // catch divide-by-zero error
-			//System.out.println("Division by zero.");
+		} catch (ArithmeticException e) { // catch divide-by-zero error
+			System.out.println("Division by zero.");
 		} finally {
 			System.out.println("finally");
 		}

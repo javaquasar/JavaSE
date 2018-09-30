@@ -1,4 +1,4 @@
-package core.lecture3_08_Reflection.practice.cho.annotation;
+package com.javaquasar.java.core.chapter_28_Reflection.example.launch_if_annotated;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

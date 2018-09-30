@@ -17,8 +17,8 @@ import javax.swing.plaf.metal.MetalLookAndFeel;
  */
 public class Zoom extends JPanel implements MouseMotionListener, MouseListener {
 
-    //private static final String METAL_LOOK_AND_FEEL = "javax.swing.plaf.metal.MetalLookAndFeel";
-    private static final String METAL_LOOK_AND_FEEL = "com.sun.java.swing.plaf.gtk.GTKLookAndFeel";
+    private static final String METAL_LOOK_AND_FEEL = "javax.swing.plaf.metal.MetalLookAndFeel";
+    //private static final String METAL_LOOK_AND_FEEL = "com.sun.java.swing.plaf.gtk.GTKLookAndFeel";
     //private static final String METAL_LOOK_AND_FEEL = "com.sun.java.swing.plaf.motif.MotifLookAndFeel";
     //private static final String METAL_LOOK_AND_FEEL = "com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
 

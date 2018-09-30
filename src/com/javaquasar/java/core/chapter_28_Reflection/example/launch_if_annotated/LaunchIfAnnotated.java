@@ -5,6 +5,7 @@ import java.lang.reflect.*;
 /**
  * Created by Java Quasar on 16.05.17.
  */
+@Contains
 class ATest {
 
 	public void aFirst() {
@@ -21,6 +22,7 @@ class ATest {
 	}
 }
 
+//@Contains
 class BTest {
 
 	@ToInvoke
@@ -45,14 +47,22 @@ public class LaunchIfAnnotated {
 		System.out.println("---------- class " + className + " ----------");
 		try {
 			Class<?> cls = Class.forName(className);
-			Method[] methods = cls.getMethods();
-			for (Method m : methods) {
-				if (m.isAnnotationPresent(ToInvoke.class)) {
-					m.invoke(cls.newInstance());
-				} else
-					System.out.println("No annotation before " + m.getName());
+			if (cls.isAnnotationPresent(Contains.class)) {
+				Method[] methods = cls.getMethods();
+				for (Method m : methods) {
+					if (m.isAnnotationPresent(ToInvoke.class)) {
+						m.invoke(cls.newInstance());
+					} else {
+						System.out.println("No annotation before " + m.getName());
+					}
+				}
+			} else {
+				System.out.println("No annotation before" + cls.getName());
 			}
-		} catch (ClassNotFoundException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
+
+		} catch (ClassNotFoundException | SecurityException
+				| InstantiationException | IllegalAccessException
+				| IllegalArgumentException | InvocationTargetException e) {
 			e.printStackTrace();
 		}
 	}
@@ -62,7 +72,7 @@ public class LaunchIfAnnotated {
 		System.out.println(classA_NameWithPath);
 		invokeFromClass(classA_NameWithPath);
 
-		String classB_NameWithPath = ATest.class.getName();
+		String classB_NameWithPath = BTest.class.getName();
 		System.out.println(classB_NameWithPath);
 		invokeFromClass(classB_NameWithPath);
 	}

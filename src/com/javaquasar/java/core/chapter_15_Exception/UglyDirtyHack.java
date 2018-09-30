@@ -25,4 +25,9 @@ public class UglyDirtyHack {
         }
         return unsafe;
     }
+
+    public static void t() throws IOException {
+
+	    throw new IOException("fdgdfghfd dfgdfgdfd");
+    }
 }

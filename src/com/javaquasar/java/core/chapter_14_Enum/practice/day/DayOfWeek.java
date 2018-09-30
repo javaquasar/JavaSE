@@ -33,3 +33,9 @@ enum DayOfWeek {
 	}
 
 }
+
+class DayClass {
+	public final static DayClass SUNDAY = new DayClass();
+
+
+}

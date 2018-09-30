@@ -1,8 +1,6 @@
 package com.javaquasar.java.core.chapter_15_Exception.try_with_resources;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -74,7 +72,6 @@ public class TryWithResources {
     public static void viewTable(Connection con) throws SQLException {
 
         String query = "select COF_NAME, SUP_ID, PRICE, SALES, TOTAL from COFFEES";
-
         try (Statement stmt = con.createStatement()) {
             ResultSet rs = stmt.executeQuery(query);
 

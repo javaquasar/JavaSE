@@ -11,6 +11,7 @@ public class SortWords {
 	// Сортировка слов в предложении по алфавиту
 	public static void main(String[] args) {
 		String s = new Scanner(System.in).nextLine();
+
 		StringTokenizer st = new StringTokenizer(s);
 		int count = 0;
 		while (st.hasMoreTokens()) {

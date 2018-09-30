@@ -31,6 +31,16 @@ public class CalendarTest {
 		System.out.println("The MINUTE is: " + calendar.get(Calendar.MINUTE));
 		System.out.println("The SECOND is: " + calendar.get(Calendar.SECOND));
 		System.out.println("The AM_PM indicator is: " + calendar.get(Calendar.AM_PM));
+
+		Calendar c = new GregorianCalendar(2013, 11, 25);//календарь на 25.11.2013
+		System.out.println(c.get(Calendar.MONTH));//11
+		System.out.println(c.get(Calendar.YEAR));//2013
+		System.out.println(c.get(Calendar.DAY_OF_WEEK_IN_MONTH));//4
+		System.out.println(c.get(Calendar.DAY_OF_WEEK));//4
+		System.out.println(c.get(Calendar.DAY_OF_YEAR));//359
+		System.out.println(c.get(Calendar.DAY_OF_MONTH));//25
+
+
 	}
 
 }

@@ -42,12 +42,12 @@ public class MyArray<T> {
     }
 
     public static void main(String[] args) {
-        MyArray<String> a = new MyArray<String>(new String[]{"1", "2"});
+        MyArray<String> a = new MyArray<>(new String[]{"1", "2"});
         String s = a.get(a.size() - 1);
         System.out.println(s);     // 2
         a.set(1, "New");
         a.printAll();              // 1 New
-        MyArray<Double> b = new MyArray<Double>(3);
+        MyArray<Double> b = new MyArray<>(3);
         b.set(0, 1.0);
         b.set(1, 2.0);
         b.set(2, 4.0);
