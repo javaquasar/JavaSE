@@ -14,8 +14,6 @@ public class InterruptTest implements Runnable {
 				break;
 			}
 			System.out.println(counter);
-
-
 		}
 	}
 
