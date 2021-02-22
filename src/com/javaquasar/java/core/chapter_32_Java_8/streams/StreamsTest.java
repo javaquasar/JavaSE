@@ -3,12 +3,31 @@ package com.javaquasar.java.core.chapter_32_Java_8.streams;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StreamsTest {
 	public static void main(String[] args) {
+		/*
+		Predicate<T>
+		Consumer<T>
+		Function<T,R>
+		Supplier<T>
+		UnaryOperator<T>
+		BinaryOperator<T>
+		 */
+
+		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+		Predicate<Integer> isEvenNumber  = x -> x % 2 == 0;
+		list
+				.stream()
+				.filter(isEvenNumber)
+				.forEach(
+						System.out::println
+				);
+
 		List<String> myList =
 				Arrays.asList("a1", "a2", "b1", "c2", "c1");
 
